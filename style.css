@@ -55,23 +55,39 @@ text-align:left;
     font-size: 16px;
   }
 
-  table,
-  th,
-  td {
-    font-size: 14px;
+  @media (max-width: 768px) {
+  table thead {
+    display: none;
   }
 
-  button {
-    padding: 12px;
-  }
-
-  th, td {
+  table, tbody, tr, td {
     display: block;
     width: 100%;
-    box-sizing: border-box;
   }
 
-  table {
-    border: 0;
+  tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    text-align: left;
   }
 }
+
+
+
+
+
+
