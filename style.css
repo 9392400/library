@@ -55,6 +55,28 @@ text-align:left;
     font-size: 16px;
   }
 
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  table {
+    border: 0;
+  }
+}
+
+
   
 
 
